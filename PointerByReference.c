@@ -6,10 +6,13 @@ void square(int * const xPointer);
 
 int main()
 {
-    int num = 9;
+    int userInput;
+    printf("Enter a number to be squared: ");
 
-    square(&num);
-    printf("The square of the given number is %d\n", num);
+    scanf("%d", &userInput);
+
+    square(&userInput);
+    printf("The square of the given number is %d\n", userInput);
     return 0;
 
 }
